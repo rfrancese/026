@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_RichiestaAmicizia_Persone"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp" >
+
+        <!-- This "empty list" notifier must have an id "android:id/empty". Note that when an empty view is present, the list view will be hidden when there is no data to display. -->
+
+        <TextView
+            android:id="@+id/TextView_emptyListRichiestaAmicizia_Persone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/RelativeLayout1_RichiestaAmicizia_Persone"
+            android:text="@string/emptyListRichiestaAmicizia_Persone" />
+
+        <ListView
+            android:id="@+id/ListView_RichiestaAmicizia_Persone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/RelativeLayout1_RichiestaAmicizia_Persone" >
+
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1_RichiestaAmicizia_Persone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/richiestaAmicizia_ListRichiestaAmicizia_Persone"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/ic_action_add_person" />
+
+            <ImageButton
+                android:id="@+id/Button_refreshListRichiestaAmicizia_Persone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/refresh"
+                android:onClick="refreshRichiestaAmicizia_PersoneList"
+                android:src="@drawable/ic_action_refresh" />
+
+            <TextView
+                android:id="@+id/TextView_ListRichiestaAmicizia_Persone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/TextView_ListRichiestaAmicizia_Persone" />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Amici_Persone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!-- This "empty list" notifier must have an id "android:id/empty". Note that when an empty view is present, the list view will be hidden when there is no data to display. -->
+
+        <TextView
+            android:id="@+id/TextView_emptyListAmici_Persone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/RelativeLayout1_Amici_Persone"
+            android:text="@string/emptyListAmici_Persone" />
+
+        <ListView
+            android:id="@+id/ListView_Amici_Persone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/RelativeLayout1_Amici_Persone" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout1_Amici_Persone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/amici_ListAmici_Persone"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/ic_action_cc_bcc" />
+
+            <ImageButton
+                android:id="@+id/Button_refreshListAmici_Persone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/refresh"
+                android:onClick="refreshAmici_PersoneList"
+                android:src="@drawable/ic_action_refresh" />
+
+            <TextView
+                android:id="@+id/TextView_ListAmici_Persone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/TextView_ListAmici_Persone" />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+    
+</LinearLayout>

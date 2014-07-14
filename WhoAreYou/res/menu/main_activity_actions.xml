@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+    
+    <item android:id="@+id/action_mioProfilo"
+          android:title="@string/action_mioProfilo"
+          android:icon="@drawable/ic_action_person"
+          yourapp:showAsAction="ifRoom|withText"  />
+    
+    <item android:id="@+id/action_logout"
+          android:title="@string/action_logout"
+          android:icon="@drawable/ic_logout"
+          yourapp:showAsAction="ifRoom|withText"  />
+    
+</menu> 

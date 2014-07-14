@@ -2,7 +2,159 @@
 <resources>
 
     <string name="app_name">Who Are You?</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
 
+	<!-- Login-->
+	
+    <string name="action_settings">Settings</string>
+    <string name="hello">Who Are You?</string>
+    <string name="username">Identificativo</string>
+    <string name="password">Password</string>
+    <string name="Login">Accedi</string>
+    <string name="registrati">Registrati</string>
+    <string name="resta_collegato">Resta collegato</string>
+    
+    
+    <!-- Registrazione e MioProfilo -->
+    
+    <string name="reg">Crea il tuo profilo e scopri chi ti circonda</string>
+    <string name="id">Identificativo univoco*</string>
+    <string name="nick">Nickname*</string>
+    <string name="psw">Password*</string>
+    <string name="tel">Numero telefonico</string>
+	<string name="mail">E-mail</string>
+	<string name="citta">Città</string>
+	<string name="sesso">Sesso*</string>
+	<string name="M">M</string>
+	<string name="F">F</string>
+	<string name="nascita">Data di nascita</string>
+	<string name="img">Carica la tua foto profilo</string>
+	<string name="tog">Condividi i tuoi dati personali con gli altri utenti di \'Who Are You?\'</string>
+	<string name="salva">Salva</string>
+	<string name="aster">I campi contrassegnati con * sono obbligatori</string>
+	<string name="mod">Modifica profilo</string>
+	<string name="dati">I tuoi dati</string>
+	<string name="delete">Elimina</string>
+	
+	<!-- Profilo Vicino -->
+	
+	<string name="dettagliProf">Dettagli Profilo</string>
+	
+	<string name="idVicino">Id</string>
+    <string name="nickVicino">Nickname</string>
+    <string name="telVicino">Numero telefonico</string>
+	<string name="sessoVicino">Sesso</string>
+	<string name="fotoVicino">Foto</string>
+	<string name="conversazioneVicino">Conversazione</string>
+    
+    <!-- My Action Bar Activity -->
+    
+    <string name="action_mioProfilo">Mio Profilo</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="action_mappa">Mappa</string>
+    <string name="action_vicinoAMe">Vicino a me</string>
+    <string name="action_bachecaAvvistamenti">Bacheca Avvistamenti</string>
+    <string name="action_conversazioni">Conversazioni</string>
+    <string name="action_persone">Persone</string>
+    
+    
+    
+    <!-- MappaFragment -->
+    
+    <string name="condividiPosizione">Condividi Posizione</string>
+    <string name="info">Info</string>
+    <string name="refresh">Refresh</string>
+    
+    
+    <!-- VicinoAMeFragment -->
+    <string name="TextView_ListVicinoAMe">Persone nelle vicinanze</string>
+    <string name="iconaCerca_ListVicinoAMe">Icona Cerca</string> 
+    
+    <string name="emptyListVicinoAMe">Nessun utente rilevato nelle vicinanze.</string>
+	<string name="immagine_VicinoAMe">Foto utente</string>
+	<string name="identificativo_VicinoAMe">Identificativo</string>
+    <string name="username_VicinoAMe">Username</string>
+	<string name="dataEOra_VicinoAMe">mm:ss</string>
+    <string name="distanza_VicinoAMe">km o metri da te</string>
+
+   
+    <!-- BachecaAvvistamenti -->
+    <string name="TextView_ListBachecaAvvistamenti">Bacheca Avvistamenti</string>
+    <string name="iconaMessaggio_ListBachecaAvvistamenti">Icona Messaggio</string> 
+    
+    <string name="emptyListBachecaAvvistamenti">Nessun messaggio d\'avvistamento rilevato nelle vicinanze.</string>
+	<string name="immagine_BachecaAvvistamenti">Foto utente</string>
+	<string name="identificativo_BachecaAvvistamenti">Identificativo</string>
+    <string name="username_BachecaAvvistamenti">Username</string>
+	<string name="dataEOra_BachecaAvvistamenti">mm:ss</string>
+    <string name="distanza_BachecaAvvistamenti">km o metri da te</string>
+ 	<string name="Button_messaggioBachecaAvvistamenti">invia</string>
+    
+        
+  <!--   <string name="messaggio_BachecaAvvistamenti">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam </string> 
+    quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure .......... -->
+   
+   
+   
+   <!-- Conversazioni -->
+    <string name="TextView_ListConversazioni">Conversazioni</string>
+    <string name="iconaMessaggio_ListConversazioni">Icona Messaggio</string> 
+    
+    <string name="emptyListConversazioni">Non vi sono conversazioni con utenti amici.</string>
+	<string name="immagine_Conversazioni">Foto utente</string>
+	<string name="identificativo_Conversazioni">Identificativo</string>
+    <string name="username_Conversazioni">Username</string>
+   	<string name="messaggiDaLeggere_Conversazioni">Msg da leggere</string>
+   	
+   	<string name="elimina_Conversazioni">Elimina</string>
+   
+   
+   
+   <!-- ConversazionePrivata -->
+    <string name="TextView_ListConversazionePrivata">Conversazione privata</string>
+    <string name="iconaMessaggio_ListConversazionePrivata">Icona Messaggio</string> 
+    
+    <string name="emptyListConversazionePrivata">Non vi sono messaggi relativi a questa conversazione.</string>
+	<string name="immagine_ConversazionePrivata">Foto utente</string>
+	<string name="identificativo_ConversazionePrivata">Identificativo</string>
+    <string name="username_ConversazionePrivata">Username</string>
+	<string name="dataEOra_ConversazionePrivata">mm:ss</string>
+    <string name="distanza_ConversazionePrivata">km o metri da te</string>
+ 	<string name="Button_messaggioConversazionePrivata">invia</string>
+   	
+   	<string name="amico_ConversazionePrivata">Amico:</string> 
+    <string name="statoMessaggio_ConversazionePrivata">Stato Messaggio</string> 
+    
+    
+    
+    <!-- Persone - Richiesta Amicizia -->
+    <string name="TextView_ListRichiestaAmicizia_Persone">Richieste d\'Amicizia</string>
+    <string name="richiestaAmicizia_ListRichiestaAmicizia_Persone">Icona Richiesta Amicizia</string> 
+    
+    <string name="emptyListRichiestaAmicizia_Persone">Non vi sono richieste d\'amicizia.</string>
+    
+    <string name="immagine_RichiestaAmicizia_Persone">Foto utente</string>
+	<string name="identificativo_RichiestaAmicizia_Persone">Identificativo</string>
+    <string name="username_RichiestaAmicizia_Persone">Username</string>
+
+   	<string name="accetta_RichiestaAmicizia_Persone">Accetta</string>
+   	<string name="rifiuta_RichiestaAmicizia_Persone">Rifiuta</string>
+    
+   
+   	
+   	<!-- Persone - Amici -->
+    <string name="TextView_ListAmici_Persone">Amici</string>
+    <string name="amici_ListAmici_Persone">Icona Amici</string> 
+    
+    <string name="emptyListAmici_Persone">Non hai ancora degli amici. Cerca vicino a te! :) </string>
+    
+    <string name="immagine_Amici_Persone">Foto utente</string>
+	<string name="identificativo_Amici_Persone">Identificativo</string>
+    <string name="username_Amici_Persone">Username</string>
+
+   	
+   	<string name="elimina_Amici_Persone">Elimina Amico</string>
+    
+       
+    
 </resources>

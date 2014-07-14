@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/ImageView_immagineRichiestaAmicizia_Persone"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/immagine_RichiestaAmicizia_Persone"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ImageView_immagineRichiestaAmicizia_Persone"
+        android:layout_marginBottom="22dp"
+        android:layout_toRightOf="@+id/ImageView_immagineRichiestaAmicizia_Persone"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView_identificativoRichiestaAmicizia_Persone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/identificativo_RichiestaAmicizia_Persone" />
+
+        <TextView
+            android:id="@+id/TextView_usernameRichiestaAmicizia_Persone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username_RichiestaAmicizia_Persone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImageView_accettaRichiestaAmicizia_Persone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/ImageView_rifiutaRichiestaAmicizia_Persone"
+        android:layout_toLeftOf="@+id/ImageView_rifiutaRichiestaAmicizia_Persone"
+        android:contentDescription="@string/accetta_RichiestaAmicizia_Persone" 
+        android:clickable="true"
+        android:src="@drawable/ic_action_good"/>
+
+    <ImageView
+        android:id="@+id/ImageView_rifiutaRichiestaAmicizia_Persone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:clickable="true"
+        android:contentDescription="@string/rifiuta_RichiestaAmicizia_Persone"
+        android:src="@drawable/ic_action_bad" />
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- This "empty list" notifier must have an id "android:id/empty". Note that when an empty view is present, the list view will be hidden when there is no data to display. -->
+
+    <TextView
+        android:id="@+id/TextView_emptyListVicinoAMe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RelativeLayout_VicinoAMe"
+        android:text="@string/emptyListVicinoAMe" />
+
+    <ListView
+        android:id="@+id/ListView_vicinoAMe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RelativeLayout_VicinoAMe" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_VicinoAMe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+        	android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/iconaCerca_ListVicinoAMe"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/ic_action_search" />
+
+        <TextView
+            android:id="@+id/TextView_ListVicinoAMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/TextView_ListVicinoAMe" />
+
+        <ImageButton
+            android:id="@+id/Button_refreshListVicinoAMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+        	android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/refresh"
+            android:onClick="refreshVicinoAMeList"
+            android:src="@drawable/ic_action_refresh" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

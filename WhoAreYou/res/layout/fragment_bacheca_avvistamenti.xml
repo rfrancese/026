@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_BachecaAvvistamenti"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+        	android:layout_alignParentTop="true"
+            android:contentDescription="@string/iconaMessaggio_ListBachecaAvvistamenti"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_action_chat" />
+
+        <TextView
+            android:id="@+id/TextView_ListBachecaAvvistamenti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/TextView_ListBachecaAvvistamenti" />
+
+        <ImageButton
+            android:id="@+id/Button_refreshListBachecaAvvistamenti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+        	android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:onClick="refreshBachecaAvvistamentiList"
+            android:contentDescription="@string/refresh"
+            android:src="@drawable/ic_action_refresh" />
+        
+    </RelativeLayout>
+
+    
+    <LinearLayout 
+    android:id="@+id/LinearLayout_messaggioBachecaAvvistamenti"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/RelativeLayout_BachecaAvvistamenti" >
+
+    <EditText
+        android:id="@+id/EditText_messaggioBachecaAvvistamenti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+        android:maxLength="250"
+        android:imeOptions="actionSend" >
+        
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/Button_messaggioBachecaAvvistamenti"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="invioMessaggioAvvistamento"
+        android:contentDescription="@string/Button_messaggioBachecaAvvistamenti"
+        android:src="@drawable/ic_action_send_now" />
+
+	</LinearLayout>    
+    
+    <!-- This "empty list" notifier must have an id "android:id/empty". Note that when an empty view is present, the list view will be hidden when there is no data to display. -->
+
+    <TextView
+        android:id="@+id/TextView_emptyListBachecaAvvistamenti"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/LinearLayout_messaggioBachecaAvvistamenti"
+        android:text="@string/emptyListBachecaAvvistamenti" />
+
+    <ListView
+        android:id="@+id/ListView_BachecaAvvistamenti"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/LinearLayout_messaggioBachecaAvvistamenti" >
+    </ListView>
+    
+    
+</RelativeLayout>

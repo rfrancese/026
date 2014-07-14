@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_ConversazionePrivata"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+        	android:layout_alignParentTop="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@string/iconaMessaggio_ListConversazionePrivata"
+            android:src="@drawable/ic_action_email" />
+
+        <TextView
+            android:id="@+id/TextView_ListConversazionePrivata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/TextView_ListConversazionePrivata" />
+
+        <ImageButton
+            android:id="@+id/Button_refreshListConversazionePrivata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+        	android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:onClick="refreshConversazionePrivataList"
+            android:contentDescription="@string/refresh"
+            android:src="@drawable/ic_action_refresh" />
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout_ConversazionePrivataAmico"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeLayout_ConversazionePrivata"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView_amicoConversazionePrivata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/amico_ConversazionePrivata" />
+        
+        <TextView
+            android:id="@+id/TextView_identificativoConversazionePrivata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/identificativo_ConversazionePrivata" />
+
+        <TextView
+            android:id="@+id/TextView_usernameConversazionePrivata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/username_ConversazionePrivata" />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+    android:id="@+id/LinearLayout_messaggioConversazionePrivata"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true" >
+
+    <EditText
+        android:id="@+id/EditText_messaggioConversazionePrivata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+        android:maxLength="250"
+        android:imeOptions="actionSend" >
+        
+        <requestFocus />
+    </EditText>
+
+    <ImageButton
+        android:id="@+id/Button_messaggioConversazionePrivata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="invioMessaggioPrivato"
+        android:contentDescription="@string/Button_messaggioConversazionePrivata" 
+        android:src="@drawable/ic_action_send_now" />
+
+	</LinearLayout>
+	
+    <LinearLayout 
+    android:id="@+id/LinearLayout_ConversazionePrivataList"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/LinearLayout_ConversazionePrivataAmico" 
+    android:layout_above="@+id/LinearLayout_messaggioConversazionePrivata"
+    android:orientation="vertical">
+        
+	    <!-- This "empty list" notifier must have an id "android:id/empty". Note that when an empty view is present, the list view will be hidden when there is no data to display. -->
+	    <TextView
+	        android:id="@+id/TextView_emptyListConversazionePrivata"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/emptyListConversazionePrivata" />
+	
+	    <ListView
+	        android:id="@+id/ListView_ConversazionePrivata"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	    </ListView>
+	    
+    </LinearLayout>
+    
+</RelativeLayout>
